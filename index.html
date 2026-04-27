@@ -13,9 +13,17 @@
   <!-- Navbar -->
   <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6">
     <div class="max-w-7xl mx-auto flex items-center justify-between glass-card p-4 rounded-full">
-      <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900 dark:text-white transition-colors uppercase">
-        CONVECTION
-      </a>
+      <div class="flex items-center gap-4">
+        <!-- Language Switcher -->
+        <div class="flex items-center gap-1 glass-card p-1 rounded-full">
+          <button onclick="setLanguage('en')" data-lng="en" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">EN</button>
+          <button onclick="setLanguage('id')" data-lng="id" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">ID</button>
+        </div>
+
+        <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900 dark:text-white transition-colors uppercase">
+          CONVECTION
+        </a>
+      </div>
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8">
@@ -28,11 +36,6 @@
       </div>
 
       <div class="flex items-center gap-3">
-        <!-- Language Switcher -->
-        <div class="flex items-center gap-1 glass-card p-1 rounded-full">
-          <button onclick="setLanguage('en')" data-lng="en" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">EN</button>
-          <button onclick="setLanguage('id')" data-lng="id" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">ID</button>
-        </div>
         <!-- Mobile Toggle -->
         <button onclick="toggleMenu()" class="md:hidden p-2 text-slate-700 dark:text-white">
           <i data-lucide="menu"></i>
