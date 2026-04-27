@@ -166,6 +166,7 @@ i18next
   .use(LanguageDetector)
   .init({
     resources,
+    lng: 'id', // Force default language to Indonesian
     fallbackLng: 'id',
     detection: {
       order: ['localStorage', 'cookie', 'navigator'],

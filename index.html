@@ -29,7 +29,7 @@
 
       <div class="flex items-center gap-3">
         <!-- Language Switcher -->
-        <div class="hidden sm:flex items-center gap-1 glass-card p-1 rounded-full">
+        <div class="flex items-center gap-1 glass-card p-1 rounded-full">
           <button onclick="setLanguage('en')" data-lng="en" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">EN</button>
           <button onclick="setLanguage('id')" data-lng="id" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">ID</button>
         </div>
@@ -49,6 +49,11 @@
         <a href="custom-creations.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.custom">Kustom</a>
         <a href="about.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.about">Tentang</a>
         <a href="contact.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.contact">Kontak</a>
+        <div class="h-px bg-slate-200 dark:bg-white/10 w-full my-2"></div>
+        <div class="flex items-center gap-2">
+          <button onclick="setLanguage('en')" data-lng="en" class="flex-1 py-3 text-sm font-bold rounded-xl transition-all border border-slate-200 dark:border-white/10">English</button>
+          <button onclick="setLanguage('id')" data-lng="id" class="flex-1 py-3 text-sm font-bold rounded-xl transition-all border border-slate-200 dark:border-white/10">Indonesia</button>
+        </div>
       </div>
     </div>
   </nav>

@@ -25,13 +25,30 @@
         <a href="contact.html" class="text-sm font-bold transition-colors text-indigo-600" data-i18n="nav.contact">Kontak</a>
       </div>
       <div class="flex items-center gap-3">
-        <div class="hidden sm:flex items-center gap-1 glass-card p-1 rounded-full">
+        <div class="flex items-center gap-1 glass-card p-1 rounded-full">
           <button onclick="setLanguage('en')" data-lng="en" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">EN</button>
           <button onclick="setLanguage('id')" data-lng="id" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">ID</button>
         </div>
         <button onclick="toggleMenu()" class="md:hidden p-2 text-slate-700 dark:text-white">
           <i data-lucide="menu"></i>
         </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-6 right-6 glass-card rounded-3xl p-6 shadow-2xl animate-in">
+      <div class="flex flex-col gap-6">
+        <a href="index.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.home">Beranda</a>
+        <a href="professional-uniforms.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.uniforms">Seragam</a>
+        <a href="performance-sports.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.sports">Olahraga</a>
+        <a href="custom-creations.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.custom">Kustom</a>
+        <a href="about.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.about">Tentang</a>
+        <a href="contact.html" class="text-lg font-bold text-slate-900 dark:text-white" data-i18n="nav.contact">Kontak</a>
+        <div class="h-px bg-slate-200 dark:bg-white/10 w-full my-2"></div>
+        <div class="flex items-center gap-2">
+          <button onclick="setLanguage('en')" data-lng="en" class="flex-1 py-3 text-sm font-bold rounded-xl transition-all border border-slate-200 dark:border-white/10">English</button>
+          <button onclick="setLanguage('id')" data-lng="id" class="flex-1 py-3 text-sm font-bold rounded-xl transition-all border border-slate-200 dark:border-white/10">Indonesia</button>
+        </div>
       </div>
     </div>
   </nav>
