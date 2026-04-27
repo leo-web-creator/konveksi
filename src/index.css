@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glass-white: rgba(255, 255, 255, 0.3);
+  --color-glass-border: rgba(255, 255, 255, 0.4);
+  --color-glass-hover: rgba(255, 255, 255, 0.5);
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-500 overflow-x-hidden font-sans text-slate-800;
+    background: radial-gradient(circle at 0% 0%, #ff9a9e 0%, #fecfef 99%, #fecfef 100%), radial-gradient(circle at 100% 100%, #a1887f 0%, #f5f5f5 100%);
+    background-blend-mode: overlay;
+    background-color: #f3f4f6;
+  }
+  
+  body.dark {
+    @apply text-white;
+    background: radial-gradient(circle at 0% 0%, #475569 0%, #334155 99%, #334155 100%), radial-gradient(circle at 100% 100%, #475569 0%, #1e293b 100%);
+    background-color: #334155;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-xl border bg-white/30 border-white/40 shadow-lg;
+  }
+  
+  .dark .glass-card {
+    @apply bg-slate-800/40 border-slate-600/30;
+  }
+
+  .liquid-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(125deg, #e2e8f0 0%, #cbd5e1 100%);
+  }
+
+  .dark .liquid-bg {
+    background: linear-gradient(125deg, #334155 0%, #475569 100%);
+  }
+
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: move 20s infinite alternate linear;
+  }
+
+  @keyframes move {
+    from { transform: translate(-10%, -10%) rotate(0deg); }
+    to { transform: translate(10%, 10%) rotate(360deg); }
+  }
+}

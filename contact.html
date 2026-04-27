@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | CONVECTION</title>
+  <link rel="stylesheet" href="/src/index.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="min-h-screen">
+  <div class="liquid-bg"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6">
+    <div class="max-w-7xl mx-auto flex items-center justify-between glass-card p-4 rounded-full">
+      <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900 dark:text-white transition-colors uppercase">
+        CONVECTION
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.home">Beranda</a>
+        <a href="professional-uniforms.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.uniforms">Seragam</a>
+        <a href="performance-sports.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.sports">Olahraga</a>
+        <a href="custom-creations.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.custom">Kustom</a>
+        <a href="about.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.about">Tentang</a>
+        <a href="contact.html" class="text-sm font-bold transition-colors text-indigo-600" data-i18n="nav.contact">Kontak</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-1 glass-card p-1 rounded-full">
+          <button onclick="setLanguage('en')" data-lng="en" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">EN</button>
+          <button onclick="setLanguage('id')" data-lng="id" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">ID</button>
+        </div>
+        <button onclick="toggleMenu()" class="md:hidden p-2 text-slate-700 dark:text-white">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl font-black mb-6 text-slate-900 dark:text-white" data-i18n="about_page.title">Start Your Project</h1>
+        <p class="text-slate-600 dark:text-white text-lg mb-12" data-i18n="contact_page.subtitle">
+          Ready to elevate your brand with custom apparel? Our experts are here to help you through the process.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass-card flex flex-col items-center text-center p-8 rounded-[2rem]">
+          <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mb-4">
+            <i data-lucide="phone" size="24"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white" data-i18n="contact_page.call">Call Us</h3>
+          <p class="text-slate-500 dark:text-white">+62 (21) 123-4567</p>
+        </div>
+
+        <div class="glass-card flex flex-col items-center text-center p-8 rounded-[2rem]">
+          <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mb-4">
+            <i data-lucide="mail" size="24"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white" data-i18n="contact_page.email">Email Us</h3>
+          <p class="text-slate-500 dark:text-white">HubungiSaya@convection.com</p>
+        </div>
+
+        <div class="glass-card flex flex-col items-center text-center p-8 rounded-[2rem]">
+          <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mb-4">
+            <i data-lucide="map-pin" size="24"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white" data-i18n="contact_page.visit">Visit Us</h3>
+          <p class="text-slate-500 dark:text-white" data-i18n="contact_page.visit">Jalan Jelambar No.X</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-white/10 dark:border-slate-800 mt-20 relative z-10 transition-colors">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-white uppercase transition-colors">
+        CONVECTION
+      </div>
+      <p class="text-xs text-slate-900 dark:text-white font-black" data-i18n="footer.rights">© 2026 LEO-Budiharto. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

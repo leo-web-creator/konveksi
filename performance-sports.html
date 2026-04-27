@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Sports | CONVECTION</title>
+  <link rel="stylesheet" href="/src/index.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="min-h-screen">
+  <div class="liquid-bg"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6">
+    <div class="max-w-7xl mx-auto flex items-center justify-between glass-card p-4 rounded-full">
+      <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900 dark:text-white transition-colors uppercase">
+        CONVECTION
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.home">Beranda</a>
+        <a href="professional-uniforms.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.uniforms">Seragam</a>
+        <a href="performance-sports.html" class="text-sm font-bold transition-colors text-indigo-600" data-i18n="nav.sports">Olahraga</a>
+        <a href="custom-creations.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.custom">Kustom</a>
+        <a href="about.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.about">Tentang</a>
+        <a href="contact.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.contact">Kontak</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-1 glass-card p-1 rounded-full">
+          <button onclick="setLanguage('en')" data-lng="en" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">EN</button>
+          <button onclick="setLanguage('id')" data-lng="id" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">ID</button>
+        </div>
+        <button onclick="toggleMenu()" class="md:hidden p-2 text-slate-700 dark:text-white">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col items-center text-center mb-16">
+        <h1 class="text-5xl font-black mb-6 text-slate-900 dark:text-white uppercase tracking-tight" data-i18n="sports_page.title">Performance Sports Apparel</h1>
+        <p class="text-slate-600 dark:text-white text-lg max-w-2xl" data-i18n="sports_page.desc">
+          Engineered for elite performance. Our sports apparel uses moisture-wicking technology and ergonomic designs.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-20">
+        <div class="glass-card overflow-hidden p-0 h-[400px] rounded-[2rem]">
+          <img 
+             src="https://images.unsplash.com/photo-1551927336-09d50efd69cd?q=80&w=1200&auto=format&fit=crop" 
+             alt="Sports Performance" 
+             class="w-full h-full object-cover"
+             referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="grid grid-cols-1 gap-6">
+          <div class="glass-card flex items-start gap-4 p-6 rounded-[2rem]">
+            <i data-lucide="zap" class="text-indigo-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white mb-2" data-i18n="sports_page.f1">Moisture-Wicking</h3>
+              <p class="text-slate-500 dark:text-white text-sm" data-i18n="sports_page.f1_desc">Keep cool and dry with our advanced fabric technology.</p>
+            </div>
+          </div>
+          <div class="glass-card flex items-start gap-4 p-6 rounded-[2rem]">
+            <i data-lucide="zap" class="text-indigo-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white mb-2" data-i18n="sports_page.f2">Flexible Fit</h3>
+              <p class="text-slate-500 dark:text-white text-sm" data-i18n="sports_page.f2_desc">Enhanced mobility for dynamic movements and high-intensity activities.</p>
+            </div>
+          </div>
+          <div class="glass-card flex items-start gap-4 p-6 rounded-[2rem]">
+            <i data-lucide="zap" class="text-indigo-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white mb-2" data-i18n="sports_page.f3">Breathable Mesh</h3>
+              <p class="text-slate-500 dark:text-white text-sm" data-i18n="sports_page.f3_desc">Superior ventilation built into every high-performance jersey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact CTA -->
+    <div class="max-w-7xl mx-auto">
+      <div class="glass-card p-12 text-center bg-indigo-600/5 rounded-[3rem]">
+        <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-6" data-i18n="contact_page.title">Start Your Project</h2>
+        <p class="text-slate-600 dark:text-white text-lg mb-10 max-w-2xl mx-auto" data-i18n="contact_page.subtitle">
+          Ready to elevate your brand with custom apparel? Our experts are here to help you through the process.
+        </p>
+        <a href="contact.html" class="px-10 py-5 bg-indigo-600 text-white rounded-2xl font-bold hover:bg-indigo-700 transition-all inline-block" data-i18n="contact_page.cta">
+          Contact Us Now
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-white/10 dark:border-slate-800 mt-20 relative z-10 transition-colors">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-white uppercase transition-colors">
+        CONVECTION
+      </div>
+      <p class="text-xs text-slate-900 dark:text-white font-black" data-i18n="footer.rights">© 2026 LEO-Budiharto. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

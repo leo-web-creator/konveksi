@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CONVECTION</title>
+  <link rel="stylesheet" href="/src/index.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="min-h-screen">
+  <div class="liquid-bg"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6">
+    <div class="max-w-7xl mx-auto flex items-center justify-between glass-card p-4 rounded-full">
+      <a href="index.html" class="text-xl font-black tracking-tighter text-slate-900 dark:text-white transition-colors uppercase">
+        CONVECTION
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.home">Beranda</a>
+        <a href="professional-uniforms.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.uniforms">Seragam</a>
+        <a href="performance-sports.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.sports">Olahraga</a>
+        <a href="custom-creations.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.custom">Kustom</a>
+        <a href="about.html" class="text-sm font-bold transition-colors text-indigo-600" data-i18n="nav.about">Tentang</a>
+        <a href="contact.html" class="text-sm font-bold transition-colors text-slate-700 dark:text-white hover:text-indigo-600" data-i18n="nav.contact">Kontak</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-1 glass-card p-1 rounded-full">
+          <button onclick="setLanguage('en')" data-lng="en" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">EN</button>
+          <button onclick="setLanguage('id')" data-lng="id" class="px-2 py-0.5 text-[10px] font-bold rounded-full transition-all">ID</button>
+        </div>
+        <button onclick="toggleMenu()" class="md:hidden p-2 text-slate-700 dark:text-white">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h1 class="text-5xl font-black mb-12 text-slate-900 dark:text-white" data-i18n="about_page.title">Our Legacy of Craft</h1>
+      <div class="flex flex-col md:flex-row gap-12 items-center mb-20">
+        <div class="flex-1 space-y-6">
+          <p class="text-slate-600 dark:text-white text-lg leading-relaxed" data-i18n="about_page.desc1">
+            With over a decade of experience, we specialize in high-volume garment production that doesn't compromise on individual quality. Our facility combines state-of-the-art machinery with skilled artisanal techniques.
+          </p>
+          <p class="text-slate-600 dark:text-white text-lg leading-relaxed" data-i18n="about_page.desc2">
+            Founded on the principles of precision and durability, we have grown from a small workshop into a leading provider of professional and athletic apparel.
+          </p>
+          <div class="grid grid-cols-2 gap-4 pt-4">
+            <div class="p-4 glass-card">
+              <div class="text-3xl font-black text-indigo-600">3+</div>
+              <div class="text-sm text-slate-500 dark:text-white uppercase tracking-widest" data-i18n="about_page.years">Years Experience</div>
+            </div>
+            <div class="p-4 glass-card">
+              <div class="text-3xl font-black text-indigo-600">10k+</div>
+              <div class="text-sm text-slate-500 dark:text-white uppercase tracking-widest" data-i18n="about_page.delivered">Items Delivered</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 w-full h-[500px]">
+          <div class="glass-card p-0 overflow-hidden h-full shadow-2xl rounded-3xl">
+            <img 
+              src="https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=800&auto=format&fit=crop" 
+              alt="Craftsmanship" 
+              class="w-full h-full object-cover"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact CTA -->
+    <div class="max-w-7xl mx-auto">
+      <div class="glass-card p-12 text-center bg-indigo-600/5 border-indigo-200/50 rounded-[3rem]">
+        <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-6" data-i18n="contact_page.title">Start Your Project</h2>
+        <p class="text-slate-600 dark:text-white text-lg mb-10 max-w-2xl mx-auto" data-i18n="contact_page.subtitle">
+          Ready to elevate your brand with custom apparel? Our experts are here to help you through the process.
+        </p>
+        <a href="contact.html" class="px-10 py-5 bg-indigo-600 text-white rounded-2xl font-bold shadow-xl shadow-indigo-500/20 hover:bg-indigo-700 transition-all inline-block" data-i18n="contact_page.cta">
+          Contact Us Now
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-white/10 dark:border-slate-800 mt-20 relative z-10 transition-colors">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-white uppercase transition-colors">
+        CONVECTION
+      </div>
+      <p class="text-xs text-slate-900 dark:text-white font-black" data-i18n="footer.rights">© 2026 LEO-Budiharto. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
